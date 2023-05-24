@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>date</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #242331;
+			font-family: monospace;
+		}
+		p{
+			font-size: 1vw;
+		}
+		body, a:visited{
+			color: #F1F7ED;
+		}
+		a{
+			position: absolute;
+			bottom: 1vw;
+			left: 1vw;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body >
+	<p id="p"></p>
+	<a href="https://cestchatgptquilafaitpasmoi.vercel.app" target="blank_">cliquez ici</a>
+	<script type="text/javascript">
+		function updateTime() {
+			document.getElementById("p").innerHTML = new Date();
+			setTimeout(updateTime, 1000);
+		}
+		updateTime();
+	</script>
+</body>
+</html>
